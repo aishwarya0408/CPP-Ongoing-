@@ -1,0 +1,43 @@
+#include<bits/stdc++.h>
+using namespace std;
+class PRIME
+{
+    public:
+    int prim(int a)
+    {
+        int c=0,i;
+        if(a<2)
+        {
+            cout<<"NOT PRIME"<<endl;
+        }
+        else if(a==2)
+        {
+            cout<<"PRIME"<<endl;
+        }
+        else
+        {
+            for(i=2;i<a;i++)
+            {
+                if(a%i==0)
+                {
+                    c++;
+                }
+            }
+            if(c==0)
+            {
+                cout<<"PRIME"<<endl;
+            }
+            else
+            {
+                cout<<"NOT PRIME"<<endl;
+            }
+        }
+    }
+};
+int main()
+{
+    int x;
+    cin>>x;
+    PRIME p;
+    p.prim(x);
+}
