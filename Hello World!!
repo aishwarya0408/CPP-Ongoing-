@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+class HELLO
+{
+    public:
+    void display()
+    {
+        cout<<"Hello World!!";
+    }
+};
+int main()
+{
+    HELLO p;
+    p.display();
+}
